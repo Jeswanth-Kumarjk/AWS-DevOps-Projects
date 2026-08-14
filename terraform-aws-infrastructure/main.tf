@@ -1,0 +1,15 @@
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+    }
+  }
+}
+
+provider "aws" {
+  region = "ap-south-1"
+}
+
+resource "aws_s3_bucket" "terraform_bucket" {
+  bucket = "jeswanth-terraform-demo-bucket-2026"
+}
