@@ -33,16 +33,15 @@ terraform-aws-infrastructure/
 ├── README.md
 ├── .gitignore
 └── .terraform.lock.hcl
-
+```
 ## Deployment Verification
 
 ### Deployment Screenshot
 
-The following screenshot shows the Terraform-provisioned EC2 web server successfully accessed through its public IP.
-![Terraform EC2 Deployment]
+<img width="1600" height="1200" alt="Deployment Screen Shot" src="https://github.com/user-attachments/assets/7ef706f0-d2bc-433e-9618-b9a7b832270c" />
 
-(deployment-screenshot.<img width="1600" height="1200" alt="Deployment Screen Shot" src="https://github.com/user-attachments/assets/97137dd7-e641-4dfa-8100-8866ca2edfc7" />
-png)
+
+
 
 The Terraform configuration was successfully used to provision an AWS EC2
 instance and deploy a web server.
