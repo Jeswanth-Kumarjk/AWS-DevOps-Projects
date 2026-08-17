@@ -33,3 +33,20 @@ terraform-aws-infrastructure/
 ├── README.md
 ├── .gitignore
 └── .terraform.lock.hcl
+
+## Deployment Verification
+
+The Terraform configuration was successfully used to provision an AWS EC2
+instance and deploy a web server.
+
+### Application Test
+
+The deployed web server was successfully accessed through the EC2 public IP:
+
+`http://3.111.169.30`
+
+The browser displayed:
+
+**Terraform AWS Infrastructure Project**
+
+This confirms that the EC2 instance and web server were successfully provisioned and are accessible over the internet.
