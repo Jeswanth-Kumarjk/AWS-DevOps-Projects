@@ -1,106 +1,35 @@
-\# Terraform AWS Infrastructure
+# Terraform AWS Infrastructure
 
+Infrastructure as Code (IaC) project using Terraform to provision and manage AWS resources.
 
+## Technologies Used
 
-\## Project Overview
+- Terraform
+- AWS S3
+- Git
+- GitHub
 
-This project demonstrates how to provision AWS infrastructure using Terraform.
+## Project Overview
 
+This project demonstrates how to provision and manage AWS infrastructure using Terraform instead of manually creating resources through the AWS Management Console.
 
+The project currently provisions an Amazon S3 bucket and manages its configuration using Terraform.
 
-\## Technologies Used
+## AWS Resources
 
-\- AWS
+### Amazon S3
 
-\- Terraform
+- S3 bucket creation
+- S3 bucket versioning
+- AWS region configuration
+- Bucket name managed through Terraform variables
 
-\- Git
+## Project Structure
 
-\- GitHub
-
-\- Git Bash
-
-
-
-\## AWS Resource
-
-\- Amazon S3 Bucket
-
-
-
-\## Terraform Configuration
-
-Terraform is used as Infrastructure as Code (IaC) to create and manage the S3 bucket.
-
-
-
-\### AWS Region
-
-ap-south-1 (Mumbai)
-
-
-
-\### S3 Bucket
-
-jeswanth-terraform-demo-bucket-2026
-
-
-
-\## Terraform Workflow
-
-
-
-terraform init
-
-terraform plan
-
-terraform apply
-
-
-
-\## Project Flow
-
-
-
-Terraform Configuration
-
-&#x20;       ↓
-
-Terraform CLI
-
-&#x20;       ↓
-
-AWS Provider
-
-&#x20;       ↓
-
-AWS Account
-
-&#x20;       ↓
-
-S3 Bucket
-
-
-
-\## Git Workflow
-
-
-
-git add .
-
-git commit -m "Initial Terraform AWS infrastructure"
-
-git push origin main
-
-
-
-The Terraform configuration is version-controlled using Git and stored in GitHub.
-
-
-
-\## Result
-
-
-
-The S3 bucket was successfully created in AWS using Terraform.
-
+```text
+terraform-aws-infrastructure/
+├── main.tf
+├── variables.tf
+├── README.md
+├── .gitignore
+└── .terraform.lock.hcl
